@@ -1,0 +1,15 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldenLayout sample App</title>
+</head>
+
+<template name="layout">
+  {{> header}}
+  <div class="container">
+
+      {{> yield}}
+
+  </div>
+
+  {{> footer}}
+</template>

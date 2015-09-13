@@ -1,0 +1,16 @@
+<template name="animals">
+  <h1>Rank your favorite Animals!</h1>
+  <p>Use Drag and Drop</p>
+  <div>
+    <a href="#" id="add" class="btn btn-primary">Add</a>
+    <div id="animals">
+      {{#each animals}}
+        {{> animal}}
+      {{else}}
+        <h4>
+          You haven't added any favorite animals, click the Add button!
+        </h4>
+      {{/each}}
+    </div>
+  </div>
+</template>
